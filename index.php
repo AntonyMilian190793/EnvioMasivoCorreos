@@ -458,7 +458,8 @@
 
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog h-100 d-flex flex-column justify-content-center my-0"  role="document">
+	<form method="post" id="usuarios_form">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Suscríbete</h5>
@@ -471,14 +472,16 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">@</span>
   </div>
-  <input type="text" class="form-control" placeholder="Correo electrónico" aria-label="Username" aria-describedby="basic-addon1">
-</div
+  <input type="email" class="form-control" placeholder="Correo electrónico" aria-label="Username" aria-describedby="basic-addon1" required>
+	</div>
+	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam error unde necessitatibus, ipsum sint autem vero illum aspernatur sed blanditiis non amet itaque nesciunt optio possimus atque fuga sit asperiores!</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Guardar</button>
+        <button type="submit" class="btn btn-primary">Guardar</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
+	</form>
   </div>
 </div>
 
