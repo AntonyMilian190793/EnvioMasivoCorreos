@@ -382,7 +382,7 @@
 								<div class="blog-post-icon">
 									<img src="public\images\blog-card-3.png">
 								</div>
-								<h3 class="blog-post-title">Communicationn</h3>
+								<h3 class="blog-post-title">Communication</h3>
 								<p class="blog-post-text">We've made our client support services easy to access</p>
 								<a class="blog-post-link" href="#news">Read More</a>
 							</div>
