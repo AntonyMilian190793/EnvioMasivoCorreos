@@ -978,3 +978,8 @@
         .footer-subsection-form-input{
         width: 85%;
     }
+
+    .input-group-addon,
+input[type=email],
+input[type=submit],
+.modal-content{border-radius:0px}
