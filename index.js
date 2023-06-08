@@ -17,7 +17,16 @@ function guardar(e) {
         contentType: false,
         processData:false,
         success: function(data){
-            console.log(data);
+            $("#usu_correo").val('');
+            $("#modalsuscribete").modal('hide');
+
+            Swal.fire({
+                icon: 'success',
+                title: 'AntonyMilian',
+                text: "Gracias por suscribirte!",
+                showConfirmButton: false,
+                timer: 2000
+              })
         }
     });
 }

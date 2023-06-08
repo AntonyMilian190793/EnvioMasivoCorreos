@@ -1,6 +1,6 @@
 <!-- Modal -->
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="modalsuscribete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 
   <div class="modal-dialog h-100 d-flex flex-column justify-content-center my-0" role="document">
     <form method="post" id="usuario_form">

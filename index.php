@@ -100,7 +100,7 @@
 					</ul>
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link learn-more-btn" data-toggle="modal" data-target="#myModal" role="button">Signup</a>
+							<a class="nav-link learn-more-btn" data-toggle="modal" data-target="#modalsuscribete" role="button">Signup</a>
 						</li>
 					</ul>
 				</div>
@@ -467,7 +467,9 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="public\js\owl\owl.carousel.js"></script>
 	<script src="public\js\accordian.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script src="index.js"></script>
+	
   	<!-- Header scroll -->
 		<script type="text/javascript">
 				$(window).scroll(function() {
