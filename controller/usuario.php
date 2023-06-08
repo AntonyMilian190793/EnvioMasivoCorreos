@@ -7,7 +7,7 @@
 
 
     switch ($_GET["op"]){
-        case "GuardarCorreo":
+        case "guardarcorreo":
             $usuario->insert_correo($_POST["usu_correo"]);
             break;
     }
