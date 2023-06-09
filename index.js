@@ -20,13 +20,23 @@ function guardar(e) {
             $("#usu_correo").val('');
             $("#modalsuscribete").modal('hide');
 
-            Swal.fire({
-                icon: 'success',
-                title: 'AntonyMilian',
-                text: "Gracias por suscribirte!",
-                showConfirmButton: false,
-                timer: 2000
-              })
+            if(data == 1){
+                Swal.fire({
+                    icon: 'success',
+                    title: 'AntonyMilian',
+                    text: "Gracias por suscribirte!",
+                    showConfirmButton: false,
+                    timer: 2000
+                  })
+            }else{
+                Swal.fire({
+                    icon: 'error',
+                    title: 'AntonyMilian',
+                    text: "Correo ya registrado!",
+                    showConfirmButton: false,
+                    timer: 2000
+                  })
+            }
         }
     });
 }

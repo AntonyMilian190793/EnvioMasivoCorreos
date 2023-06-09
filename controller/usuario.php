@@ -8,7 +8,14 @@
 
     switch ($_GET["op"]){
         case "guardarcorreo":
-            $usuario->insert_correo($_POST["usu_correo"]);
+            $datos = $usuario->get_correo($_POST["usu_correo"]);
+
+            if(is_array($datos) == true and count($datos) == 0){
+                $usuario->insert_correo($_POST["usu_correo"]);
+                echo 1;
+        }else{
+            echo 2;
+        }
             break;
     }
 
