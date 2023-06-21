@@ -17,10 +17,14 @@ function guardar(e) {
         contentType: false,
         processData:false,
         success: function(data){
-            $("#usu_correo").val('');
             $("#modalsuscribete").modal('hide');
 
             if(data == 1){
+
+                $.post("controller/usuario.php?op=emailBienvenida",{usu_correo : $("#usu_correo").val()},function(data){
+                    console.log(data);
+                });
+
                 Swal.fire({
                     icon: 'success',
                     title: 'AntonyMilian',
@@ -28,6 +32,8 @@ function guardar(e) {
                     showConfirmButton: false,
                     timer: 2000
                   })
+                  
+                  $("#usu_correo").val('');
             }else{
                 Swal.fire({
                     icon: 'error',

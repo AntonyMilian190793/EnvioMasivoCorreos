@@ -5,6 +5,9 @@
     require_once("../models/Usuario.php");
     $usuario = new Usuario();
 
+    require_once("../models/Email.php");
+    $email = new Email();
+
 
     switch ($_GET["op"]){
         case "guardarcorreo":
@@ -17,6 +20,10 @@
             echo 2;
         }
             break;
+
+        case "emailBienvenida":
+            $email->email_bienvenida($_POST["usu_correo"]);
+                break;
     }
 
 
